@@ -42,7 +42,7 @@
 				"inputs": [],
 				"name": "withdraw",
 				"outputs": [],
-				"stateMutability": "nonpayable",
+				"stateMutability": "payable",
 				"type": "function"
 			},
 			{
@@ -72,7 +72,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/WalletMappings.sol": "WalletContract"
+			"contracts/WalletMappings.sol": "WalletMapContract"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -87,11 +87,11 @@
 	},
 	"sources": {
 		"contracts/WalletMappings.sol": {
-			"keccak256": "0xe881554d2e345f0e325697a7e052d2ac20ea77e53e9c1cf4fc3f1067c9f310a6",
+			"keccak256": "0x60051c410c10fa452c52f679199165fc9dbbfea3c25e288a0de8a1f4ed8edcb2",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://1009cfd2d41b394aa11291f629d4f498ad1d68e593acdfe74cfb5c93ff2ca0fc",
-				"dweb:/ipfs/QmV8Vff6YuqPHbowqa9JLxx4vngqJi4ib4KrFx382KHMBU"
+				"bzz-raw://0133cf9add1ee1946f3a21b0ebd60da83685c456f1f64f5243ba293e4a9e4a0b",
+				"dweb:/ipfs/QmQ93sguobWzGBQaWXudF3mkCMdS7xpPrfkyP8oRpJZzZA"
 			]
 		}
 	},

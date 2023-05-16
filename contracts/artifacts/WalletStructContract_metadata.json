@@ -8,68 +8,27 @@
 			{
 				"inputs": [
 					{
-						"internalType": "uint256",
-						"name": "ind",
-						"type": "uint256"
-					}
-				],
-				"name": "getMapVal",
-				"outputs": [
-					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"name": "map",
-				"outputs": [
-					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "message",
-				"outputs": [
-					{
-						"internalType": "string",
-						"name": "",
-						"type": "string"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
 						"internalType": "address",
 						"name": "",
 						"type": "address"
 					}
 				],
-				"name": "myAddr",
+				"name": "balance",
 				"outputs": [
 					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
+						"internalType": "uint256",
+						"name": "total",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "numDeposits",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "numWithdrawals",
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -77,7 +36,46 @@
 			},
 			{
 				"inputs": [],
-				"name": "setAddr",
+				"name": "deposit",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getContractBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "withdraw",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -85,12 +83,17 @@
 			{
 				"inputs": [
 					{
+						"internalType": "address payable",
+						"name": "to",
+						"type": "address"
+					},
+					{
 						"internalType": "uint256",
-						"name": "index",
+						"name": "amount",
 						"type": "uint256"
 					}
 				],
-				"name": "setVal",
+				"name": "withdraw",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -109,7 +112,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/SampleMapping.sol": "SampleContract"
+			"contracts/WalletStruct.sol": "WalletStructContract"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -123,12 +126,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/SampleMapping.sol": {
-			"keccak256": "0x208e4c15f08bacbed133b2ef1082537559b7e2e122b5b98deeb4cec5a04c6274",
+		"contracts/WalletStruct.sol": {
+			"keccak256": "0x0c2834c799bc63a5cfae7945a6fb7eb876a0d3e7505a9a73ba13926c07235d27",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://074af40e3918d29793053b39a3bcdb6a078284f9844e4142ee5e25f2015643f0",
-				"dweb:/ipfs/QmZvWHfAUPxF7svskRvGR95wkcwwRC5QdTdHAWVDmfjZj9"
+				"bzz-raw://6c48c7db21e5c26169930f4baa8812f78473cdb7db0aec8cb7e983d42d908877",
+				"dweb:/ipfs/QmcC1Sjx7Q5h73icbMq1AETUp3qvbRSKfpMWuQq7yGzRAo"
 			]
 		}
 	},
